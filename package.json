@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/xpepermint/express-hash-webpack/issues"
   },
-  "homepage": "https://github.com/xpepermint/express-hash-webpack"
+  "homepage": "https://github.com/xpepermint/express-hash-webpack",
+  "dependencies": {
+    "path-parse": "1.0.5"
+  }
 }
