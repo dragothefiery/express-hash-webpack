@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var pathParse = require('path-parse');
 
 module.exports = function(options) {
 
@@ -64,7 +65,7 @@ module.exports = function(options) {
         var hashString = hashValue
           ? dynamicHashTemplate.replace('[value]', hashValue)
           : '';
-        var assetData = path.parse(assetPath);
+        var assetData = pathParse(assetPath);
         return dynamicAssetTemplate
           .replace('[path]', assetData.dir + '/')
           .replace('[name]', assetData.name)
